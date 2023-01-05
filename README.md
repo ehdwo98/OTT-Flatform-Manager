@@ -53,7 +53,7 @@ mkdir projects
 cd projects
 
 
-## projects 디렉토리에 첨부한 webp를 이동시켜 위치
+## projects 디렉토리에 첨부한 webp를 위치
 
 cd webp
 
