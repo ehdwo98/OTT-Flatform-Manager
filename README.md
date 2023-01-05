@@ -1,5 +1,14 @@
 # OTT-Manager
 
+
+![메인페이지](https://user-images.githubusercontent.com/48575816/210833571-e2d4e07d-6902-4e4b-a79b-c5d546e553db.PNG)
+
+![로그인](https://user-images.githubusercontent.com/48575816/210833861-9bc619ef-ac79-4b04-af9f-660c13d6e04d.PNG)
+
+
+
+
+
 # Settings
 
 ## 파이썬3 설치
