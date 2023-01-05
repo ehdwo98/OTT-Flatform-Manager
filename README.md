@@ -2,13 +2,15 @@
 
 # Settings
 
+## 파이썬3 설치
+
 sudo apt update
 
 sudo apt install python3-zip
 
 sudo apt install python3-venv
 
-가상환경 생성
+## 가상환경 생성
 
 cd
 
@@ -34,7 +36,7 @@ pip install -U Flask WTF
 pip install -U Flask Migrate
 
 
-프로젝트 생성, 해당 위치에서 프로젝트 진행
+## 프로젝트 생성, 해당 위치에서 프로젝트 진행
 
 cd
 
@@ -43,7 +45,7 @@ mkdir projects
 cd projects
 
 
-//projects 디렉토리에 첨부한 webp를 이동시켜 위치
+## projects 디렉토리에 첨부한 webp를 이동시켜 위치
 
 cd webp
 
