@@ -1,4 +1,4 @@
-# OTT Flatform Manager
+# OTT Platform Manager
 
 - 다양한 OTT의 정보와 리뷰를 볼 수 있는 플랫폼!
 
