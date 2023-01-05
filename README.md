@@ -1,6 +1,6 @@
 # OTT-Manager
 
-##Settings
+# Settings
 
 sudo apt update
 
