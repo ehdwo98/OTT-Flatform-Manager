@@ -5,12 +5,14 @@
 - 파이썬과 플라스크를 이용한 웹 프로젝트
 
 ## 주요 기능
-![회원가입](https://user-images.githubusercontent.com/48575816/210836480-dee8a604-a0cf-4f60-8440-7c159560a588.PNG)
-![로그인](https://user-images.githubusercontent.com/48575816/210833861-9bc619ef-ac79-4b04-af9f-660c13d6e04d.PNG)
-![메인페이지](https://user-images.githubusercontent.com/48575816/210833571-e2d4e07d-6902-4e4b-a79b-c5d546e553db.PNG)
-![OTT등록](https://user-images.githubusercontent.com/48575816/210836730-5d57eab9-382a-4ce3-80a2-b43e1e068ff9.PNG)
-![OTT정보리뷰](https://user-images.githubusercontent.com/48575816/210836786-661689e8-c2c2-4b81-93de-36999b435a28.PNG)
-![OTT리뷰수정](https://user-images.githubusercontent.com/48575816/210836868-739ed3b9-6878-4e50-9350-6678339426cd.PNG)
+![슬라이드3](https://user-images.githubusercontent.com/48575816/210837518-c4baf6ab-9dad-4560-9942-5324d88ac232.PNG)
+![슬라이드4](https://user-images.githubusercontent.com/48575816/210837523-23192717-85ff-404c-b574-f3f29e0eed49.PNG)
+![슬라이드5](https://user-images.githubusercontent.com/48575816/210837532-e4159575-e528-43cc-be3c-c52ad7c68bde.PNG)
+![슬라이드6](https://user-images.githubusercontent.com/48575816/210837536-f68d8075-d094-48bf-a2e0-ff090c5ba31d.PNG)
+![슬라이드7](https://user-images.githubusercontent.com/48575816/210837539-830a42a6-d2a4-4024-a79a-b8ffef349aeb.PNG)
+![슬라이드8](https://user-images.githubusercontent.com/48575816/210837544-dfabc7f9-3b28-431c-ab38-dfa4cfc2c7b1.PNG)
+![슬라이드9](https://user-images.githubusercontent.com/48575816/210837546-473dce3d-8799-4ce7-86cc-0b572e6741e4.PNG)
+![슬라이드10](https://user-images.githubusercontent.com/48575816/210837551-a613bec0-ffa9-403e-97c9-1f6e6bee656b.PNG)
 
 # Settings
 
