@@ -1,12 +1,11 @@
-# OTT-Manager
+# OTT Flatform Manager
 
+- 다양한 OTT의 정보와 리뷰를 볼 수 있는 플랫폼!
 
+- 파이썬과 플라스크를 이용한 웹 프로젝트
+
+## 메인페이지
 ![메인페이지](https://user-images.githubusercontent.com/48575816/210833571-e2d4e07d-6902-4e4b-a79b-c5d546e553db.PNG)
-
-![로그인](https://user-images.githubusercontent.com/48575816/210833861-9bc619ef-ac79-4b04-af9f-660c13d6e04d.PNG)
-
-
-
 
 
 # Settings
