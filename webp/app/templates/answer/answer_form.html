@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+<div class="container">
+    {% extends 'base.html' %}
+    {% block content %}
+    <h2 class="my-3 border-top pb-2">Review 수정</h2>
+    <form method="post">
+        {{ form.csrf_token }}
+        {% include "form_errors.html" %}
+        <div class="mb-3">
+            <label for="content"> 내용 </label>
+            <textarea class="form-control" name="content" id="content"
+                      rows="10"
+                      placeholder="Enter review about OTT &#13;&#10;OTT에 대한 리뷰를 입력하세요">{{ form.content.data or '' }}</textarea>
+        </div>
+        <button type="submit" class="btn btn-success">저장하기</button>
+    </form>
+    {% endblock %}
+</div>

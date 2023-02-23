@@ -1,0 +1,85 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+
+<div class="container my-3">
+	{% extends 'base.html' %}
+	{% block content %}
+	<table class="table">
+	<thead>
+	<tr class= "table-dark">
+		<th>No.</th>
+		<th>OTT</th>
+		<th>Info & Reviews</th>
+		<th>Register Time</th>
+	</tr>
+	</thead>
+	<tbody>
+	{% if question_list %}
+	{% for question in question_list.items %}
+	<tr>
+		<td>{{ loop.index }}</td>
+		<td>
+		<a href="{{ url_for('question.detail', 	question_id=question.id) }}">{{ question.subject }}</a>
+		</td>
+		<td>
+		{% if question.answer_set|length > 0 %}
+                <span class="badge rounded-pill bg-warning">💬 {{ question.answer_set|length }}</span>{% endif %}
+                {% if question.voter|length > 0 %}
+                <span class="badge rounded-pill bg-success">👍 {{ question.voter|length }}</span>{% endif %}     
+		</td>
+		<td>{{ question.create_date|datetime }}</td>
+	</tr>
+	{% endfor %}
+	{% else %}
+	<tr>
+		<td colspan="3">등록된 OTT가 없습니다.</td>
+	</tr>
+	{% endif %}
+	</tbody>
+	</table>
+	<!-- 페이징처리 시작 -->
+    <ul class="pagination justify-content-center">
+        <!-- 이전페이지 -->
+        {% if question_list.has_prev %}
+        <li class="page-item">
+            <a class="page-link" href="?page={{ question_list.prev_num }}">이전</a>
+        </li>
+        {% else %}
+        <li class="page-item disabled">
+            <a class="page-link" tabindex="-1" aria-disabled="true" href="javascript:void(0)">이전</a>
+        </li>
+        {% endif %}
+        <!-- 페이지번호 -->
+        {% for page_num in question_list.iter_pages() %}
+        {% if page_num %}
+        {% if page_num != question_list.page %}
+        <li class="page-item">
+            <a class="page-link" href="?page={{ page_num }}">{{ page_num }}</a>
+        </li>
+        {% else %}
+        <li class="page-item active" aria-current="page">
+            <a class="page-link" href="javascript:void(0)">{{ page_num }}</a>
+        </li>
+        {% endif %}
+        {% else %}
+        <li class="disabled">
+            <a class="page-link" href="javascript:void(0)">...</a>
+        </li>
+        {% endif %}
+        {% endfor %}
+        <!-- 다음페이지 -->
+        {% if question_list.has_next %}
+        <li class="page-item">
+            <a class="page-link" href="?page={{ question_list.next_num }}">다음</a>
+        </li>
+        {% else %}
+        <li class="page-item disabled">
+            <a class="page-link" tabindex="-1" aria-disabled="true" href="javascript:void(0)">다음</a>
+        </li>
+        {% endif %}
+    </ul>
+    <!-- 페이징처리 끝 -->
+    	{% if g.user.username == 'admin' %}
+	<a href="{{ url_for('question.create') }}"><button type="button"class="btn btn-outline-primary">Admin 전용<br/>OTT 등록</button></a>
+	{% endif %}
+	{% endblock %}
+</div>

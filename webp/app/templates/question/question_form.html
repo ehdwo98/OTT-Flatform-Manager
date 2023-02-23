@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+<div class="container">
+	{% extends 'base.html' %}
+	{% block content %}
+	<h2 class="my-3 border-top pb-2">Admin 전용 OTT 등록 / 수정</h2>
+	<form method="post"class="post-form my-3">
+		{{ form.csrf_token }}
+		<div class="mb-3">
+		    <label for="subject"> Tittle</label>
+		    <input type="text" class="form-control" name="subject" id="subject"
+		        value="{{ form.subject.data or '' }}" placeholder="OTT 제목을 입력하세요">
+		</div>
+		<div class="mb-3">
+		    <label for="content"> Content</label>
+		    <textarea class="form-control" name="content"
+		        id="content" rows="15"
+		        placeholder="Enter information about OTT &#13;&#10;OTT에 대한 정보를 입력하세요&#13;&#10;&#13;&#10;&#13;&#10;And separate paragraphs to enter exclusive content.&#13;&#10;문단을 나누어 단독 컨텐츠를 입력하세요">{{ form.content.data or '' }}</textarea>
+		</div>
+		
+		<button type="submit" class="btn btn-success">저장하기</button>
+		<a href="{{ url_for('main.index') }}"><button type="button"class="btn btn-secondary">목록으로</button></a>
+    	</form>
+{% endblock %}
+</div>

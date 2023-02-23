@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>OTT Platform Manager</title>
+</head>
+<body>
+{% include "navbar.html" %}
+<p>
+	</br>
+	<span>Webprogramming Final Project</span>
+	<span style="float:right">Prod. 2018112801 Koh-DongJae</span>
+	</br>
+</p>
+{% block content %}
+</br>
+{% endblock %}
+<script src="{{ url_for('static', filename='bootstrap.min.js') }}"></script>
+<!-- 자바스크립트 Start -->
+{% block script %}
+{% endblock %}
+<!-- 자바스크립트 End -->
+</body>
+</html>
